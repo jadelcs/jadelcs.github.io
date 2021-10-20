@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!-- GEOM 101 Assignment 2 -->
+<!-- Jade Lacsamana -->
+<!-- Web page 2 -->
+<!-- assignment options: 5+ unique images, responsive design, Google Maps static API, external links -->
+
+<!-- set document language to English -->
+<html lang="en">
+
+<head>
+	
+	<!-- set character encoding -->
+	<meta charset="UTF-8">
+	
+	<!-- link to external CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- responsive design, from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- add title on browser tab -->
+	<title>The Adventure</title>
+	
+</head>
+
+
+	
+<body>
+
+	<!-- hero image and hero text, from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+	<div class="hero-image2">
+		<div class="hero-text">
+			<h1>A Georgian Bay Paddling Adventure</h1>
+		</div>
+	</div>
+	
+	
+	
+	<!-- navigation bar div and text, from https://www.w3schools.com/howto/howto_js_topnav.asp -->
+	<div class="topnav">
+	  <a href="index.html">Welcome</a>
+	  <a href="adventure.html">The Adventure</a>
+	</div>
+
+
+
+	<!-- outer spacing around page content under hero image and nav bar -->
+	<div class="wrapper">
+
+		<h2>Expedition Location</h2>
+		
+		<!-- Google static maps with formatting fix -->
+		<div class="clearfix">
+			<div class="map">
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=Bayfield%20Inlet&zoom=9&size=600x600&maptype=roadmap&markers=color:green%7CKillbear&markers=color:red%7C45.893607,-80.565371&style=feature:road%7Celement:labels%7Cvisibility:off&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Start and finish markers along Georgian Bay on Google Maps with zoom of 9" width="450" height="450">
+			</div>
+			
+			<div class="map">
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=Midland,Ontario&zoom=7&size=600x600&maptype=roadmap&markers=size:mid%7Ccolor:green%7CKillbear&markers=size:mid%7Ccolor:red%7C45.893607,-80.565371&style=feature:road%7Celement:labels%7Cvisibility:off&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA" alt="Start and finish markers along Georgian Bay on Google Maps with zoom of 7" width="450" height="450">
+			</div>
+		</div>
+		
+		
+		<!-- paragraph text under Google static maps -->
+		<div id="mapdesc">
+			<p>We launched our canoes at Killbear Provincial Park (green marker) and spent the next 14 days weaving through the islands on the eastern coast of Georgian Bay, 
+			making our way north to a pick up point on the Key River (red marker). Over two weeks, we paddled a total of approximately 140 kilometers.</p>
+		</div>
+		
+		
+		
+		<!-- line across page to break up sections -->
+		<hr>
+	
+	
+	
+		<!-- responsive gallery with formatting fix, taken from https://www.w3schools.com/css/css_image_gallery.asp -->
+		<h2>Gallery</h2>
+		
+		<div class="clearfix">
+
+			<div class="responsive">
+			  <div class="gallery">
+				<!-- link image and open impage in new tab -->
+				<a target="_blank" href="images/planning.jpg">
+				<!-- image source and alternate text if image link broken -->
+				  <img src="images/planning.jpg" alt="Group of ten gathered around large paper map at campsite">
+				</a>
+				<!-- descriptive text under images -->
+				<div class="desc">Going over our planned route at Killbear Provincial Park</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/canoeing.jpg">
+				  <img src="images/canoeing.jpg" alt="Group of six in three canoes paddling on the water">
+				</a>
+				<div class="desc">Trying to stay together as we cross the open water of Georigan Bay</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/unload.jpg">
+				  <img src="images/unload.jpg" alt="Docked canoes and barrels on smooth rock shore">
+				</a>
+				<div class="desc">Unloading the barrels to set up our camp</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/tents.jpg">
+				  <img src="images/tents.jpg" alt="Bare rock island with tents and man in the distance">
+				</a>
+				<div class="desc">Setting up our single-person tents on bare rock</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/kitchen.jpg">
+				  <img src="images/kitchen.jpg" alt="Upside-down canoes by lake and sunshine">
+				</a>
+				<div class="desc">Our kitchen set up using canoes and large rocks</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/cooking.jpg">
+				  <img src="images/cooking.jpg" alt="Woman cooking with dutch oven by campfire">
+				</a>
+				<div class="desc">Cooking dinner over the campfire</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/chickenliver.jpg">
+				  <img src="images/chickenliver.jpg" alt="Woman paddling with friends canoeng ahead down river channel">
+				</a>
+				<div class="desc">Paddling through Chiken Liver Channel</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/sunrise.jpg">
+						<img src="images/sunrise.jpg" alt="Sunrise with sillhouettes of trees and people walking in the distance">
+					</a>
+					<div class="desc">Geting up with the sunrise</div>
+				</div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/storm.jpg">
+				  <img src="images/storm.jpg" alt="Yellow tent with dark sky and clouds rolling in over top from the left.">
+				</a>
+				<div class="desc">Watching a thunder storm roll in</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/rainbow.jpg">
+				  <img src="images/rainbow.jpg" alt="Rainbow over rocky island with pine trees">
+				</a>
+				<div class="desc">The rainbow after the storm passed</div>
+			  </div>
+			</div>
+		
+		</div>
+		
+		
+		
+		<!-- line across page to break up sections -->
+		<hr>
+		
+		<!-- paragraph text with external links for CCC, OBC and Ryan Lamoureux sites -->
+		<div class="link">
+			<p>To find out more about the Canadian Conservation Corps, click <a class="linkstyle" href="https://cwf-fcf.org/en/explore/conservation-corps/">here</a></p>
+		</div>
+		
+		<div class="link">
+			<p>To find out more about Outward Bound Canada, click <a class="linkstyle" href="https://www.outwardbound.ca/">here</a></p>
+		</div>
+		
+		<div class="link2">
+			<p>All images belong to <a class="linkstyle" href="https://www.ryanlamoureux.com/">Ryan Lamoureux</a> </p>
+		</div>
+		
+		
+	</div>
+	
+</body>
+
+</html>
+

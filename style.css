@@ -1,0 +1,328 @@
+/* GEOM 101 Assignment 2 */
+/* Jade Lacsamana */
+/* CSS */
+
+
+
+/* bring in custom font*/
+@font-face {
+	font-family: NationalParkFont;
+	src:url(NationalPark-Regular.otf);
+}
+
+
+
+/* apply custom font, full height and no margin to entire page */
+body, html {
+	font-family: NationalParkFont;
+	height: 100%;
+	margin: 0px;
+}
+
+
+
+/* set header text color, size, and margin */
+h1 {
+	display: block;
+	color: white;
+	font-size: 50px;
+}
+
+h2 {
+	display: block;
+	color: darkslategrey;
+	font-size: 40px;
+	margin: 0px
+}
+
+h3 {
+	display: block;
+	color: darkslategrey;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+
+/* set paragraph text color and size */
+p {
+	color: darkslategrey;
+	font-size: 17px;
+}
+
+
+
+/* hero image and hero text */
+/* set background image, shading, position and size for top banner on index page*/
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner1.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* set background image, shading, position and size for top banner on adventure page*/
+.hero-image2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner2.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* center hero text on hero image */
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* set horizontal navigation bar under hero image */
+/* set nav bar color, spacing on page, and center text */
+.topnav {
+	display: block;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	background-color: whitesmoke
+}
+
+/* set nav bar text color, sizing, padding, and remove underline */
+.topnav a {
+	color: slategrey;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 20px
+}
+
+/* set color when hovering over nav bar text */
+.topnav a:hover {
+	color: darkslategrey;
+}
+
+
+
+/* spacing around web page */
+.wrapper {
+	display: block;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+}
+
+
+
+/* images in About section on index page */
+/* set image sizing, margin, and float left on the page */
+.myimage {
+	width: 40%;
+	max-width: 3600px;
+	height: auto;
+	float: left;
+	margin-right: 0px;
+	margin-bottom: 40px;
+}
+
+.myimage2 {
+	width: 40%;
+	max-width: 3600px;
+	height: auto;
+	float: left;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+
+
+/* set About section paragraph text div sizing and float right on page */
+.para {
+	width:60%;
+	height: auto;
+	float: right;
+	padding: 15px;
+	padding-left: 30px;
+}
+
+
+
+/* formatting fix after photos and text, taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clearfix */
+.clearfix {
+	overflow: auto;
+	text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* styling line break */
+.hr {
+	margin: 50px;
+}
+
+
+
+/* set sizing and placement for logos on index page*/
+.logos {
+	width: 25%;
+	padding: 5px;
+	float: left;
+
+}
+
+.logos img {
+	width: 60%;
+	height: auto;
+}
+
+/* set different sizing and spacing for canserv logo */
+#canservlogo {
+	width: 25%;
+	padding: 10px;
+	float: left;
+}
+
+#canservlogo img {
+	width: 30%;
+	height: auto;
+}
+
+
+
+/* styling hyperlinks */
+/* set padding and float left for link on name */ 
+#namelink {
+	width: 100%;
+	padding: 5px;
+	float: left;
+	text-align: left;
+}
+
+/* set color when hovering over name link */
+#namelink a:hover {
+	color: darkslategrey;
+}
+
+/* set CCC and OBC hyperlink spacing */
+.link {
+	width: 50%;
+	padding: 10px;
+	padding-top: 30px;
+	float:left;
+	text-align: center;
+}
+
+/* set text color when hovering over CCC and OBC hyperlinks */
+.link a:hover {
+	color: darkslategrey;
+}
+
+/* set Ryan Lamoureux hyperlink spacing */
+.link2 {
+	width: 100%;
+	padding: 10px;
+	padding-bottom: 20px;
+	float:left;
+	text-align: center;
+}
+
+/* set text color when hovering over Ryan Lamoureux hyperlink */
+.link2 a:hover {
+	color: darkslategrey;
+}
+
+/* set all hyperlink text color and remove underline */
+.linkstyle {
+	text-decoration: none;
+	color: slategrey;
+}
+
+
+
+/* center static map images, float left, set size and spacing */
+.map {
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 20px;
+	text-align: center;
+}
+
+.map img {
+	width: 100%;
+	height: auto;
+}
+
+/* set size and spacing for map description text */
+#mapdesc {
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+
+/* set gallery image border, border sizing and spacing */
+div.gallery {
+	border: 1px solid #ffffff;
+	width: 100%;
+	max-width: 3600px;
+	margin: 20px;
+}
+
+/* set border color when hovering over image */
+div.gallery:hover {
+  border: 1px solid #708090;
+}
+
+/* set gallery image sizing inside border */
+div.gallery img {
+  width: 100%;
+  max-width: 3600px;
+  height: auto;
+}
+
+/* center text under gallery images and set padding */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* include border in  element*/
+* {
+  box-sizing: border-box;
+}
+
+/* set responsive gallery spacing, two images wide */
+.responsive {
+  padding: 30px;
+  float: left;
+  width: 50%;
+}
+
+/* CSS @media rule from https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+/* for screens smaller than 900px, stack images vertically */
+@media only screen and (max-width: 900px) {
+	.responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
